@@ -1,0 +1,152 @@
+@media screen and (max-width: 1000px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  table {
+      width:100%;
+  }
+  thead {
+      display: none;
+  }
+  tr:nth-of-type(2n) {
+      background-color: inherit;
+  }
+  tr td:first-child {
+      background: #f0f0f0;
+      font-weight:bold;
+      font-size:1.3em;
+  }
+  tbody td {
+      display: block;
+      text-align:center;
+  }
+  tbody td:before {
+      content: attr(data-th);
+      display: block;
+      text-align:center;
+  }
+} */
+
+#abmTitulo{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 2%;
+}
+#body{
+  background-color: #212529;
+}
+
+table {
+  text-align: center;
+  border: 5px solid rgb(233, 223, 223);
+}
+.labell{
+  margin: 2px auto;
+}
+.inputFormIngreso,.form-select{
+  margin: 2px 2px;
+}
+#selectTipo{
+  width: 90%;
+
+}
+#FormIngreso1 {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 30%;
+    border: solid;
+    border-color: blueviolet;
+  }
+#formDatos{
+  background-color:#212529;
+}
+  #idFormulario{
+    /* background-color:#212529; */
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+ 
+  #contenedorTabla{
+    margin: 2% auto;
+    border: 10px;
+    border-color: antiquewhite;
+
+}
+#Titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ /* .FormularioCompleto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}  */
+
+.promedio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#promedio{
+  border-color: white;
+  margin: 5px;
+
+}
+#botonAgregar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    
+}
+
+/* SPINNER-------------------------------------------------------------------------- */
+.contenedor_loader{
+  background-color: rgb(199, 199, 199);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  transition: all 1.5s;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 60%;
+    /* display: flex; 
+  align-items: center; */
+  /* justify-content: center;  */
+}
+.spinner {
+/* margin: 20px 49%; */
+margin: 20% auto;
+
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+
+  /* SPINNER-------------------------------------------------------------------------- */
+}

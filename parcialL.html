@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="parcialStyles.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CSS only -->
+
+
+
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div class="contenedor_loader" id="contenedor_loader">
+        <div id="spinner2" class="spinner"></div>
+    </div>
+    <div id="formDatos">
+
+        <form action="" id="idFormulario" class="formulario">
+            <div id="Titulo">
+                <h1>Form Lista</h1>
+            </div>
+
+            <div class="labell">
+
+                <select id="select" class="form-select" aria-label="Default select example">
+
+                    <option value="todos" selected>Todos</option>
+                    <option value="Aereo">Aereo</option>
+                    <option value="Terrestre">Terrestre</option>
+                </select>
+
+            </div>
+
+
+
+        </form>
+
+
+        <section id="contenedorTabla">
+
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th id="thId">
+                            <input class="button" name="button" type="button" id="inputId" value="Id" />
+                        </th>
+                        <th id="thModelo">
+                            <input class="button" name="button" type="button" id="inpModelo" value="Modelo" />
+                        </th>
+                        <th id="thAniofab">
+                            <input class="button" name="button" type="button" id="inpAniofab" value="Aniofab" />
+                        </th>
+                        <th id="thVelMax">
+                            <input class="button" name="button" type="button" id="inpVelMax" value="VelMax" />
+                        </th>
+
+                        <th id="thAltMax">
+                            <input class="button" name="button" type="button" id="inpAltMax" value="AltMax" />
+                        </th>
+                        <th id="thAutonomia">
+                            <input class="button" name="button" type="button" id="inpAutonomia" value="Autonomia" />
+                        </th>
+                        <th id="thCantPue">
+                            <input class="button" name="button" type="button" id="inpCantPue" value="CantPue" />
+                        </th>
+                        <th id="thCantRue">
+                            <input class="button" name="button" type="button" id="inpCantRue" value="CantRue" />
+                        </th>
+ 
+                        <th id="thModificar">
+                            <input class="button" name="button" type="button" id="inpModificar" value="Modificar" />
+                        </th>
+                        <th id="thEliminar">
+                            <input class="button" name="button" type="button" id="inpEliminar" value="Eliminar" />
+                        </th>
+
+                    </tr>
+                </thead>
+
+                <tbody id="cuerpoTabla">
+
+                </tbody>
+
+            </table>
+
+            <div id="spinner" class="spinner"></div>
+        </section>
+        <div id="botonAgregar">
+            <button id="agregar" class="btn btn-light">Agregar</button>
+    
+        </div>
+    </div>
+
+<div id="FormIngreso" >
+
+    <div>
+        <h3 id="abmTitulo"  >ABM</h3>
+    </div>
+    <form action="" id="FormIngreso1">
+
+        <div class="inputFormIngreso">
+            <input id="fID" class="form-control form-control-sm" type="text" placeholder="ID"
+                aria-label=".form-control-sm example" readonly />
+        </div>
+        <div class="inputFormIngreso">
+            <input class="form-control form-control-sm" id="fModelo" class="inputFormIngreso" type="text"
+                placeholder="Modelo" aria-label=".form-control-sm example" />
+        </div>
+        <div class="inputFormIngreso">
+            <input class="form-control form-control-sm" id="fAniofab" class="inputFormIngreso" type="text"
+                placeholder="Aniofab" aria-label=".form-control-sm example" />
+        </div>
+        <div class="inputFormIngreso">
+            <input class="form-control form-control-sm" id="fVelMax" class="inputFormIngreso" type="text"
+                placeholder="VelMax" aria-label=".form-control-sm example" />
+        </div>
+        <div class="">
+            <select id="selectTipo" class="form-select" aria-label="Default select example">
+                <option selected>Tipo</option>
+                <option value="Aereo">Aereo</option>
+                <option value="Terrestre">Terrestre</option>
+            </select>
+        </div>
+        <div class="inputFormIngreso">
+            <input class="form-control form-control-sm" id="input1" name="input1" class="inputFormIngreso" type="text"
+                placeholder="AltMax" aria-label=".form-control-sm example" />
+        </div>
+
+        <div class="inputFormIngreso">
+            <input class="form-control form-control-sm" name="input2" id="input2" class="inputFormIngreso" type="text"
+                placeholder="Autonomia" aria-label=".form-control-sm example" />
+        </div>
+
+
+
+        <div id="botones">
+            <input type="button" name="" id="AMBaceptar" value="Aceptar">
+
+            <input type="button" name="" id="cancelar" value="Cancelar">
+
+        </div>
+    </form>
+</div>
+
+</body>
+
+<script src="jsParcial.js" type="module"></script>
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>
